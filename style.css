@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7vh;
+    padding: 20px 0;
+    position: relative;
+}
+
+.main-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vh;
+}
+
+.bg-purple {
+    flex-shrink: 0;
+    width: 50vw;
+    height: 55svh;
+    border-radius: 0 0 50vw 0;
+    background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-gray {
+    flex-shrink: 0;
+    width: 50vw;
+    height: 55svh;
+    border-radius: 50vw 0 0 0;
+    opacity: 0.029999999329447746;
+    background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.phone {
+    flex-shrink: 0;
+    width: 247px;
+    height: 505px;
+    padding: 11px 9px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 30px 60px -10px rgba(62, 39, 83, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-content-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(62, 39, 83, 0.05);
+    background: #F5F3F7;
+}
+
+.header {
+    width: 228px;
+    height: 66px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 6px 6px;
+    background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+    box-shadow: 0px 5px 13px 0px rgba(62, 39, 83, 0.25);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    padding: 12px 16px;
+}
+
+.header::after {
+    content: "";
+    width: 129px;
+    height: 29px;
+    border-radius: 0px 0px 14px 14px;
+    background: #FFF;
+    margin: auto;
+    position: absolute;
+    top: -9px;
+    left: 49.5px;
+}
+
+.reveiver {
+    width: 118px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    height: 100%;
+    border-radius: 24px;
+    border: 1px solid #FFF;
+    margin: 8px;
+}
+
+.avatar img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.name-state {
+    display: flex;
+    width: 74px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.name-state :first-child {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.name-state :last-child {
+    color: #D99EFF;
+    font-family: Rubik;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 11px 7.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.messages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message1 {
+    width: 128px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 4px 10px;
+    background: #EEE5F4;
+    padding: 6px 8px;
+    color: #9341C8;
+    font-family: Rubik;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.5%;
+}
+
+.message2 {
+    width: 136px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 8px;
+    align-self: flex-end;
+}
+
+.message2>img {
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.05);
+}
+
+.message3 {
+    border-radius: 10px 10px 4px 10px;
+    background: #FFF;
+    box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.05);
+    max-width: 128px;
+    padding: 6px 8px;
+    color: #6E5D7E;
+    font-family: Rubik;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 137.5%;
+    align-self: flex-end;
+}
+
+.message4 {
+    width: 160px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 4px 10px;
+    background: linear-gradient(-225deg, #E844FF 0%, #8739FF 100%);
+    box-shadow: 0px 10px 5px -5px rgba(62, 39, 83, 0.05);
+    padding: 11px 16px 11px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.message4>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #E472FF;
+}
+
+.offer {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+}
+
+.price {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11px;
+}
+
+.chat-input {
+    width: 213px;
+    height: 33.909px;
+    flex-shrink: 0;
+    border-radius: 16.954px;
+    background: #FFF;
+    margin: auto;
+    color: #C5C9CC;
+    font-family: Rubik;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.07px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 0 20px;
+}
+
+.discription {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.discription :first-child {
+    color: #3E2753;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.discription :last-child {
+    color: #A39DA9;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 24px;
+}
+
+@media (min-width: 700px) {
+
+    body {
+        flex-direction: row;
+        gap: min(8vw, 125px);
+        padding: 0;
+    }
+
+    .bg-purple {
+        height: 88vh;
+        width: 29vw;
+    }
+
+    .bg-gray {
+        height: 88vh;
+        width: 29vw;
+    }
+
+    .discription {
+        width: max(300px, 30vw);
+        max-width: 500px;
+        align-items: flex-start;
+    }
+
+    .discription :last-child {
+        text-align: left;
+        margin: 0;
+    }
+}
