@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/responsive-chat-app-css-illustration-using-css-flexbox-dhYQ4yjNGT)
+- Live Site URL: [live site URL](https://yassine-ramla.github.io/Frontend-Mentor_Chat-app-CSS-illustration-solution/)
 
 ## My process
 
@@ -62,6 +62,7 @@ this was a great project for my css skills, and i've learnt a lot of things, one
   position: absolute;
 }
 ```
+
 then the overflow won't be hidden, i've tried all my best to hide the overflowed part withouth changing the position of the child but that doesn't work, i was obligated to think about another solution which i think is better.
 
 ## Author
